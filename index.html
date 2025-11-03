@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Lyra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #555;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #8B5CF6, #3B82F6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        
+        .chat-widget {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+        }
+        
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #20bd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            
+            .chat-widget {
+                max-width: 350px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 25px;
+            }
+            
+            .chat-widget {
+                max-width: 300px;
+            }
+            
+            .whatsapp-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://mightx.com.br" class="back-button">Voltar</a>
+    
+    <h1 class="title">Fale Conosco</h1>
+    <p class="subtitle">Converse e agende pedidos de forma eficiente com a Lyra!</p>
+    
+    <div class="chat-widget">
+        <iframe src="https://bots.easy-peasy.ai/bot/f7b430b0-c996-4fb8-a225-b87c9b247c0d?mode=embedded" width="200%" height="700" frameborder="0"></iframe>
+    </div>
+    
+    <a href="https://bots.easy-peasy.ai/bot/f7b430b0-c996-4fb8-a225-b87c9b247c0d?mode=embedded" class="whatsapp-button">WhatsApp</a>
+</body>
+</html>
